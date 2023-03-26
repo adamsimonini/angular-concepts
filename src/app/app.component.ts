@@ -1,10 +1,22 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  // meta-data properties
+  selector: 'mb-app', // this identified the component uniqurely within the DOM's component tree
+  // templateUrl: './app.component.html',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'first-angular';
+  firstMediaItem = {
+    id: 1,
+    name: 'firebug',
+    medium: 'series',
+    category: 'sci-fi',
+    year: 2010,
+  };
+
+  onMediaItemDelete(mediaItem: {}) {
+    console.log(mediaItem);
+  }
 }

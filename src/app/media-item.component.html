@@ -1,0 +1,20 @@
+<div class="media-item">
+    <h2 [textContent]="name"></h2>
+    <h2>{{mediaItem.name}}</h2>
+    <h2>{{name}}</h2>
+    <div> Watched? {{wasWatched() ? 'Yes' : 'No'}}</div>
+    <div>Action</div>
+    <div>2016</div>
+    <div>
+        <a (click)="onDelete()">
+            <button>
+                remove
+            </button>
+        </a>
+        <a>
+            <button>
+                watch
+            </button>
+        </a>
+    </div>
+</div>
